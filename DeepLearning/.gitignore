@@ -1,0 +1,13 @@
+
+# Dataset
+clothing-dataset-small/
+
+
+# Keras / TensorFlow models
+*.keras
+
+# Jupyter notebooks (ignore notebooks themselves)
+*.ipynb
+
+# Jupyter notebook checkpoints (always ignore)
+.ipynb_checkpoints/

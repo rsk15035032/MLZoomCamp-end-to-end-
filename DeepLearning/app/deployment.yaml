@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cloths-classifier
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: cloths-classifier
+  template:
+    metadata:
+      labels:
+        app: cloths-classifier
+    spec:
+      containers:
+      - name: cloths-classifier
+        image: 15035032/cloths-classifier:v1
+        ports:
+        - containerPort: 5000
